@@ -10,9 +10,11 @@ html{
 }
 
 body {
+    position: relative;
+    z-index: 100;
     margin: 0;
     letter-spacing: 0.02em;
-    font-family: Raleway, 'OpenSans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #FFFFFF;
     color: #555555;
 }
@@ -32,38 +34,17 @@ ul{
 
 .conteiner{
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @media screen and (max-width:320px) {
-        overflow-x: scroll;
-    }
-
-    @media screen and (min-width:320px) {
-        overflow: hidden;
-    }
-
-    @media screen and (min-width:480px) {
-        width: 480px;
-    }
-
+    padding: 84px 15px;
+    width: 100%;
     @media screen and (min-width:768px) {
         width: 768px;
+        padding: 100px 15px;
     }
-
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-    }
-}
-
-.section{
-    padding: 60px 0px;
-
-    @media screen and (min-width:1200px){
-        padding: 94px 0px;
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        padding: 130px 15px;
     }
 }
-
 a{ 
     text-decoration: none;
 }
