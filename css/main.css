@@ -34,8 +34,6 @@ html {
 }
 
 body {
-  position: relative;
-  z-index: 100;
   margin: 0;
   letter-spacing: 0.02em;
   font-family: 'Open Sans', sans-serif;
@@ -92,9 +90,11 @@ img {
   background-color: #303030;
 }
 
-.header__container {
+.header__container-box {
   position: relative;
-  margin: 0 auto;
+}
+
+.header__container {
   padding: 0px 15px;
   width: 100%;
 }
@@ -132,39 +132,39 @@ img {
   }
 }
 
-/*.header__nav{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 0;
-    
-    @media screen and (min-width:768px) {
-        background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        image-set( url(../images/Slider-img-3.jpg) 1x,
-        url(../images/Slider-img-3-2x.jpg) 2x,
-        url(../images/Slider-img-3-3x.jpg) 3x );
-    }
-    @media screen and (min-width:1280px) {
-        width: 1125px;
-        height: 680px;
-        background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        image-set( url(../images/Slider-img-3.jpg) 1x,
-        url(../images/Slider-img-3-2x.jpg) 2x,
-        url(../images/Slider-img-3-3x.jpg) 3x );
-    }
-}*/
+.header__nav {
+  width: 480px;
+  height: 580px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), image-set(url(../images/tel-3.jpg) 1x, url(../images/tel-3-2x.jpg) 2x, url(../images/tel-3-3x.jpg) 3x);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), -webkit-image-set(url(../images/tel-3.jpg) 1x, url(../images/tel-3-2x.jpg) 2x, url(../images/tel-3-3x.jpg) 3x);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), image-set(url(../images/tel-3.jpg) 1x, url(../images/tel-3-2x.jpg) 2x, url(../images/tel-3-3x.jpg) 3x);
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    width: 609px;
+    height: 680px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), image-set(url(../images/tablet-3.jpg) 1x, url(../images/tablet-3-2x.jpg) 2x, url(../images/tablet-3-3x.jpg) 3x);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), -webkit-image-set(url(../images/tablet-3.jpg) 1x, url(../images/tablet-3-2x.jpg) 2x, url(../images/tablet-3-3x.jpg) 3x);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), image-set(url(../images/tablet-3.jpg) 1x, url(../images/tablet-3-2x.jpg) 2x, url(../images/tablet-3-3x.jpg) 3x);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__nav {
+    width: 1125px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), image-set(url(../images/Slider-img-3.jpg) 1x, url(../images/Slider-img-3-2x.jpg) 2x, url(../images/Slider-img-3-3x.jpg) 3x);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), -webkit-image-set(url(../images/Slider-img-3.jpg) 1x, url(../images/Slider-img-3-2x.jpg) 2x, url(../images/Slider-img-3-3x.jpg) 3x);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), image-set(url(../images/Slider-img-3.jpg) 1x, url(../images/Slider-img-3-2x.jpg) 2x, url(../images/Slider-img-3-3x.jpg) 3x);
+  }
+}
+
 .header__description {
-  position: absolute;
   top: 272px;
   left: 255px;
 }
 
 .header__list {
-  position: absolute;
   right: 39px;
   top: 40px;
   display: -webkit-box;
